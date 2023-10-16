@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        function login(){
+
+        }
+    </script>
+    <style>
+        .header{
+            background-color: rgb(231, 234, 234);
+
+        }
+        ul li{
+            list-style-type: none;
+            display: inline-flex;
+            margin-right: 5px;
+            text-align: left;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row-left{
+            float: left;
+            align-items: center;
+        }
+        .container{
+            padding: 0 160px;
+            justify-content: center;
+            align-items: center;
+        }
+        .row-right{
+            display: inline-flex;
+            align-items: center;
+        }
+        a{
+            color: #CC9966;
+            text-decoration: none;
+        }
+        .header-main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Search-box{
+            padding: 0 80px;
+            display: flex;
+            width: 376px;
+            height: 40px;
+            color: #CC9966;
+        }
+        .search{
+            padding-left: 15px;
+            border: none;
+            width: 305px;
+            height: 40px;
+            color: #CC9966;
+            box-sizing: border-box;
+        }
+        .search-button{
+            border: none;
+            border-radius: 5px;
+            width: 70px;
+            height: 40px;
+            color: white;
+            background-color: #CC9966;
+        }
+        .icon{
+            width: 40px; 
+            height: 40px; 
+            border: 2px solid;  
+            color: #CC9966; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 50%;
+        }
+        .hotline{
+            display: flex;
+            margin-left: 20px;
+        }
+        .content-hotline{
+            padding-left: 10px;
+        }
+        .hotline-cart{
+            display: flex;
+            margin-left: 20px;
+            padding-left: 25px;
+        }
+        .cart{
+            display: flex;
+            margin-left: 20px;
+        }
+        .content-cart{
+            padding-left: 10px;
+        }
+        .row-left-menu{
+            display: flex;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+        }
+        .row-left-menu{
+            background-color: #b18559; 
+            width: 230px; 
+            height: 55px; 
+            align-items: center;
+            justify-content: center;
+        }
+        .title-menu{
+            padding-left: 10px;
+        }
+        .row-right-menu{
+            width: 870px;
+            height: 55px;
+            align-items: center;
+        }
+        .item{
+            display: flex;
+        }
+        .item-1{
+            color: white;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .item-1-name{
+            padding-right: 5px;
+        }
+        .item-2{
+            color: white;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 40px;
+        }
+        .item-2-name{
+            padding-right: 5px;
+        }
+        .item-3{
+            color: white;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 40px;
+        }
+        .item-3-name{
+            padding-right: 5px;
+        }
+        .item-4{
+            color: white;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 40px;
+        }
+        .item-4-name{
+            padding-right: 5px;
+        }
+        .item-5{
+            color: white;
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 40px;
+        }
+        .item-5-name{
+            padding-right: 5px;
+        }
+
+
+        .footer-top{
+            width: 1100px;
+            height: 335px;
+        }
+        .footer-top-row{
+            width: 970px;
+            height: 335px;
+        }
+        .footer-title-menu-but-1{
+            display: flex;
+            color: black;
+            font-size: 14px;
+            font-weight: 700px;
+        }
+        .footer-title-menu-item{
+            font-size: 12px;
+            font-weight: 700px;
+        }
+        .footer-title-menu-item-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="row-left">
+                        <ul class="welcome-text">
+                            <li><a class="welcome-text-1">Chào mừng bạn đến với FamiPet!</a></li>
+                            <li><a>Mở cửa: 9h-21h30, thứ 2 - CN hàng tuần</a></li>
+                        </ul>
+                    </div>
+                    <div class="row-right">
+                        <div class="icon_vn">
+                            <a href="#">
+                                <img class="ae-icon-left" src="data:image/gif;base64,R0lGODlhEAALANUAAPU8POwAAPQAAP96euUAAPdLS/QsHPk8Pf5dXf52dvZERPvMRPx3SvITE/1STvIuLvhSUvj4NflUVf5xcv1ubvQgIPUlJfENDfdDLfpAQPthYftFRfoAAPYqKv5ZWfn5PPr6QfxqavxmZvpdXfMZGfxLS/tKSfc3NvMzM/1UVOAAAPQfH/cxMfxPT/k6OvlzOvYzK/f3MPrAP/f3L/dgL/Z3KvlYWPYsLPzVS/fSMPg+NPX1JPZOKt0AAP0AAP8AACH5BAAAAAAALAAAAAAQAAsAAAaPwJ/w5yv6OByBUhAI/AbQRGJCCYk0Ixuk4BwgEJ6Ug8HIHE6sG/cJFpdkizOrY1EQfImwA7cAfWQ5MBYVAHcTKS0lDh8fETEYFiskhT4ULSYbGS8RMzWRJA0nBBwhmBkuETQ8O5INDSgqHCKZLjoYdAYGDRcXDyoCWDYSWwoKACcoKA8PPUtNzwTRKio91UEAOw==" alt="ap multilangauge">
+                            </a>
+                        </div>
+                        <div class="account-shopSystem">
+                            <ul class="account">
+                                <li class="account-login">
+                                    <a href="#" class="login">
+                                        <i class="fa-solid fa-user"></i>
+                                        Tài Khoản
+                                        </a>
+                                </li>
+                                <li class="shopSystem">
+                                    <a href="#" class="system">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Hệ thống cửa hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-header">
+            <div class="container">
+                <div class="row">
+                    <div class="content-header">
+                        <div class="header-main">
+                            <div class="logo">
+                                <a>
+                                    <img src="https://bizweb.dktcdn.net/100/346/633/themes/710500/assets/logo.png?1688615623182">
+                                </a>
+							</div>
+                            <div class="Search-box">
+                                <input type="text" class="search" placeholder="Bạn đang tìm sản phẩm nào...">
+                                <button class="search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <div class="hotline-cart">
+                                <div class="hotline">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="content-hotline">
+                                        <a style="font-size: 25px; font-weight: 800; ">0865056669</a>
+                                        <br>
+                                        <span style="font-size: 12px; color: #CC9966; ">HOTLINE MUA HÀNG</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="content-cart">
+                                        <a style="font-size: 20px; font-weight: 800; ">Sản phẩm</a>
+                                        <br>
+                                        <span style="font-size: 12px; color: #CC9966; ">Giỏ hàng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container" style="background-color: #CC9966;">
+                <div class="row" style="width: 1100px; height: 55px; align-items: center;">
+                    <div class="row-left-menu">
+                        <div class="menu-button">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </div>
+                        <div class="title-menu">
+                            <span>Danh mục sản phẩm</span>
+                        </div>
+                    </div>
+                    <div class="row-right-menu">
+                        <div class="header-nav">
+                            <ul class="item">
+                                <li class="nav-item-1">
+                                    <a class="item-1">
+                                        <span class="item-1-name">Trang chủ</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <span class="label">
+                                            <i class="label"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item-2">
+                                    <a class="item-2">
+                                        <span class="item-2-name">Shop cho chó</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <span class="label">
+                                            <i class="label"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item-3">
+                                    <a class="item-3">
+                                        <span class="item-3-name">Shop cho mèo</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <span class="label">
+                                            <i class="label"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item-4">
+                                    <a class="item-4">
+                                        <span class="item-4-name">Tin tức</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <span class="label">
+                                            <i class="label"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item-5">
+                                    <a class="item-5">
+                                        <span class="item-5-name">Giới thiệu</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <span class="label">
+                                            <i class="label"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        
+    </div>
+    <div class="footer">
+        <div class="site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-row">
+                        <div class="footer-top-row-1" style="display: flex;">
+                            <h4 class="footer-title-menu">
+                                <a role="button" class="footer-title-menu-but-1">Giới thiệu</a>
+                            </h4>
+                            <div class="footer-title-menu-item">
+                                <br>
+                                <ul class="footer-title-menu-item-list">
+                                    <li class="list-menu"><a href="#">Tìm kiếm</a></li>
+                                    <li class="list-menu"><a href="#">Đăng nhập</a></li>
+                                    <li class="list-menu"><a href="#">Đăng kí</a></li>
+                                    <li class="list-menu"><a href="#">giỏ hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
