@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>FamiPet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -17,76 +18,91 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="topbar">
-                    <ul class="welcome-text">
-                        <li class="welcome-text-list"><a class="welcome-text-1">Chào mừng bạn đến với FamiPet!</a></li>
-                        <li class="welcome-text-list"><a>Mở cửa: 9h-21h30, thứ 2 - CN hàng tuần</a></li>
-                        <a href="#">
-                            <img class="ae-icon-left" src="data:image/gif;base64,R0lGODlhEAALANUAAPU8POwAAPQAAP96euUAAPdLS/QsHPk8Pf5dXf52dvZERPvMRPx3SvITE/1STvIuLvhSUvj4NflUVf5xcv1ubvQgIPUlJfENDfdDLfpAQPthYftFRfoAAPYqKv5ZWfn5PPr6QfxqavxmZvpdXfMZGfxLS/tKSfc3NvMzM/1UVOAAAPQfH/cxMfxPT/k6OvlzOvYzK/f3MPrAP/f3L/dgL/Z3KvlYWPYsLPzVS/fSMPg+NPX1JPZOKt0AAP0AAP8AACH5BAAAAAAALAAAAAAQAAsAAAaPwJ/w5yv6OByBUhAI/AbQRGJCCYk0Ixuk4BwgEJ6Ug8HIHE6sG/cJFpdkizOrY1EQfImwA7cAfWQ5MBYVAHcTKS0lDh8fETEYFiskhT4ULSYbGS8RMzWRJA0nBBwhmBkuETQ8O5INDSgqHCKZLjoYdAYGDRcXDyoCWDYSWwoKACcoKA8PPUtNzwTRKio91UEAOw==" alt="ap multilangauge">
-                        </a>
-                    </ul>
-                    <ul class="welcome-text">
-                        <li class="welcome-text-list">
-                            <a href="#" class="login">
-                                <i class="fa-solid fa-user"></i>
-                                Tài Khoản
-                                </a>
-                        </li>
-                        <li class="welcome-text-list">
-                            <a href="#" class="system">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Hệ thống cửa hàng
+            <div class="grid__full-width">
+                <nav class="topbar row">
+                    <div class="col-7">
+                        <ul class="welcome-text">
+                            <li class="welcome-text-list"><a class="welcome-text-1">Chào mừng bạn đến với FamiPet!</a></li>
+                            <li class="welcome-text-list"><a class="welcome-text-1">Mở cửa: 9h-21h30, thứ 2 - CN hàng tuần</a></li>
+                            <a href="#">
+                                <img class="ae-icon-left" src="data:image/gif;base64,R0lGODlhEAALANUAAPU8POwAAPQAAP96euUAAPdLS/QsHPk8Pf5dXf52dvZERPvMRPx3SvITE/1STvIuLvhSUvj4NflUVf5xcv1ubvQgIPUlJfENDfdDLfpAQPthYftFRfoAAPYqKv5ZWfn5PPr6QfxqavxmZvpdXfMZGfxLS/tKSfc3NvMzM/1UVOAAAPQfH/cxMfxPT/k6OvlzOvYzK/f3MPrAP/f3L/dgL/Z3KvlYWPYsLPzVS/fSMPg+NPX1JPZOKt0AAP0AAP8AACH5BAAAAAAALAAAAAAQAAsAAAaPwJ/w5yv6OByBUhAI/AbQRGJCCYk0Ixuk4BwgEJ6Ug8HIHE6sG/cJFpdkizOrY1EQfImwA7cAfWQ5MBYVAHcTKS0lDh8fETEYFiskhT4ULSYbGS8RMzWRJA0nBBwhmBkuETQ8O5INDSgqHCKZLjoYdAYGDRcXDyoCWDYSWwoKACcoKA8PPUtNzwTRKio91UEAOw==" alt="ap multilangauge">
                             </a>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <ul class="welcome-text">
+                            <li class="welcome-text-list--select">
+                                <a class="login">
+                                    <i class="fa-solid fa-user"></i>
+                                    Tài Khoản
+                                </a>
+                                <ul class="login-register">
+                                    <li class="login-register-item-1">
+                                        <a href="#">Đăng nhập</a>
+                                    </li>
+                                    <li class="login-register-item-2">
+                                        <a href="#">Đăng ký</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="welcome-text-list">
+                                <a href="#" class="system">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Hệ thống cửa hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <div class="mid-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="content-header">
-                                <div class="header-main">
-                                    <div class="logo">
-                                        <a>
-                                            <img src="https://bizweb.dktcdn.net/100/346/633/themes/710500/assets/logo.png?1688615623182">
-                                        </a>
+                    <div class="content-header">
+                        <div class="header-main row">
+                            <div class="logo col-3">
+                                <a>
+                                    <img class="logo-img" src="https://bizweb.dktcdn.net/100/346/633/themes/710500/assets/logo.png?1688615623182">
+                                </a>
+                            </div>
+                            <div class="header-search col-5">
+                                <div class="Search-box">
+                                    <input type="text" class="search" placeholder="Bạn đang tìm sản phẩm nào...">
+                                    <button class="search-button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hotline-cart col-4">
+                                <div class="hotline">
+                                    <div class="icon-phone">
+                                        <i class="fa-solid fa-phone"></i>
                                     </div>
-                                    <div class="Search-box">
-                                        <input type="text" class="search" placeholder="Bạn đang tìm sản phẩm nào...">
-                                        <button class="search-button">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
+                                    <div class="content-hotline">
+                                        <a>0865056669</a>
+                                        <br>
+                                        <span>HOTLINE MUA HÀNG</span>
                                     </div>
-                                    <div class="hotline-cart">
-                                        <div class="hotline">
-                                            <div class="icon">
-                                                <i class="fa-solid fa-phone"></i>
-                                            </div>
-                                            <div class="content-hotline">
-                                                <a style="font-size: 25px; font-weight: 800; ">0865056669</a>
-                                                <br>
-                                                <span style="font-size: 12px; color: #CC9966; ">HOTLINE MUA HÀNG</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart">
-                                            <div class="icon">
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                            <div class="content-cart">
-                                                <a style="font-size: 20px; font-weight: 800; ">Sản phẩm</a>
-                                                <br>
-                                                <span style="font-size: 12px; color: #CC9966; ">Giỏ hàng</span>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="header__cart">
+                                    <div class="header__cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="header__cart-content">
+                                        <a>Sản phẩm</a>
+                                        <br>
+                                        <span>Giỏ hàng</span>
+                                    </div>
+                                    <div class="header__cart-list header__cart-list--no-cart">
+                                        <span class="header__cart-list-no-cart-msg">Không có sản phẩm nào trong giỏ hàng.</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="navbar">
-                    <div class="container" style="background-color: #CC9966;">
-                        <div class="row" style="width: 1100px; height: 55px; align-items: center;">
+            </div>
+            <div class="navbar">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-3">
                             <div class="row-left-menu">
                                 <div class="menu-button">
                                     <span>
@@ -96,7 +112,21 @@
                                 <div class="title-menu">
                                     <span>Danh mục sản phẩm</span>
                                 </div>
-                            </div>
+                                <ul class="menu_item">
+                                    <li class="menu_item-1">
+                                        <i class="fa-solid fa-dog" style="color: #000000;"></i>
+                                        <a href="#">Shop cho chó</a>
+                                        <i id="arrow_right-1" class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                                    </li>
+                                    <li class="menu_item-1">
+                                        <i class="fa-solid fa-cat" style="color: #000000;"></i>
+                                        <a href="#">Shop cho mèo</a>
+                                        <i id="arrow_right-2" class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="col-9">
                             <div class="row-right-menu">
                                 <div class="header-nav">
                                     <ul class="item">
@@ -147,7 +177,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -159,62 +189,60 @@
         
     </div>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="site-footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="footer-top-row">
-                        <div class="footer-top-row-1" style="display: flex;">
-                            <div class="footer-title-menu-item">
-                                <h4 class="footer-title-menu">
-                                    <a role="button" class="footer-title-menu-but-1">GIỚI THIỆU</a>
-                                </h4>
-                                <ul class="footer-title-menu-item-list" >
-                                    <li class="list-menu"><a id="footer-content" href="#">Tìm kiếm</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Đăng nhập</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Đăng kí</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">giỏ hàng</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="footer-title-menu-item" >
-                                <h4 class="footer-title-menu">
-                                    <a role="button" class="footer-title-menu-but-1">CHÍNH SÁCH CÔNG TY</a>
-                                </h4>
-                                <ul class="footer-title-menu-item-list"id="footer-content">
-                                    <li class="list-menu"><a id="footer-content" href="#">Chính sách bảo mật</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Chính sách vận chuyển</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Chính sách đổi trả</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Quy định sử dụng</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Chính sách vận chuyển</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer-title-menu-item" >
-                                <h4 class="footer-title-menu">
-                                    <a role="button" class="footer-title-menu-but-1">HỖ TRỢ KHÁCH HÀNG</a>
-                                </h4>
-                                <ul class="footer-title-menu-item-list"id="footer-content">
-                                    <li class="list-menu"><a id="footer-content" href="#">Hướng dẫn mua hàng</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Điều khoản dịch vụ</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Hướng dẫn thanh toán</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer-title-menu-item" >
-                                <h4 class="footer-title-menu">
-                                    <a role="button" class="footer-title-menu-but-1">SHOP THÚ CƯNG FAMIPET</a>
-                                </h4>
-                                <ul class="footer-title-menu-item-list"id="footer-content">
-                                    <li class="list-menu"><a id="footer-content" href="#">Cửa hàng chính: 209 Thụy Khuê, Tây Hồ, Hà Nội.</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Điện thoại: 0865056669 - longb9867@gmail.com</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">FamiPet Nguyên Xá: số 15 ngõ 132 Nguyên Xá, Minh Khai, Bắc Từ Liêm, Hà Nội</a></li>
-                                    <li class="list-menu"><a id="footer-content" href="#">Điện thoại: 0865056669</a></li>
-                                </ul>
-                            </div>
+            <div class="grid">
+                <div class="footer-top">
+                    <div class="footer-top-row-1 row">
+                        <div class="footer-title-menu-item-1 col-2">
+                            <h4 class="footer-title-menu">
+                                <a role="button" class="footer-title-menu-but-1">GIỚI THIỆU</a>
+                            </h4>
+                            <ul class="footer-title-menu-item-list" >
+                                <li class="list-menu"><a id="footer-content" href="#">Tìm kiếm</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Đăng nhập</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Đăng kí</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">giỏ hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-title-menu-item-2 col-2" >
+                            <h4 class="footer-title-menu">
+                                <a role="button" class="footer-title-menu-but-1">CHÍNH SÁCH CÔNG TY</a>
+                            </h4>
+                            <ul class="footer-title-menu-item-list">
+                                <li class="list-menu"><a id="footer-content" href="#">Chính sách bảo mật</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Chính sách vận chuyển</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Chính sách đổi trả</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Quy định sử dụng</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Chính sách vận chuyển</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-title-menu-item-3 col-2" >
+                            <h4 class="footer-title-menu">
+                                <a role="button" class="footer-title-menu-but-1">HỖ TRỢ KHÁCH HÀNG</a>
+                            </h4>
+                            <ul class="footer-title-menu-item-list">
+                                <li class="list-menu"><a id="footer-content" href="#">Hướng dẫn mua hàng</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Điều khoản dịch vụ</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Hướng dẫn thanh toán</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-title-menu-item-4 col-6" >
+                            <h4 class="footer-title-menu-4">
+                                <a role="button" class="footer-title-menu-but-1">SHOP THÚ CƯNG FAMIPET</a>
+                            </h4>
+                            <ul class="footer-title-menu-item-list">
+                                <li class="list-menu"><a id="footer-content" href="#">Cửa hàng chính: 209 Thụy Khuê, Tây Hồ, Hà Nội.</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Điện thoại: 0865056669 - longb9867@gmail.com</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">FamiPet Nguyên Xá: số 15 ngõ 132 Nguyên Xá, Minh Khai, Bắc Từ Liêm, Hà Nội</a></li>
+                                <li class="list-menu"><a id="footer-content" href="#">Điện thoại: 0865056669</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
